@@ -1,0 +1,8 @@
+uuid: bea70fad-7e2f-41e2-ba72-09a976298d2b
+langcode: en
+status: true
+dependencies: {  }
+name: Format
+vid: format
+description: 'Example: Dessert, main course, etc'
+weight: 0

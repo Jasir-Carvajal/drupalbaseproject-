@@ -1,0 +1,23 @@
+uuid: 1fa9ace0-922e-4b1f-8b61-64117c32a21b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.chef
+  module:
+    - text
+id: node.chef.body
+field_name: body
+entity_type: node
+bundle: chef
+label: Biography
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

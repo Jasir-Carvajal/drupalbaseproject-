@@ -1,0 +1,29 @@
+uuid: 05bf70fc-f967-4c95-b150-c1fa4e3321d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuisine
+    - node.type.chef
+    - taxonomy.vocabulary.cuisine
+id: node.chef.field_cuisine
+field_name: field_cuisine
+entity_type: node
+bundle: chef
+label: Specialty
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cuisine: cuisine
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

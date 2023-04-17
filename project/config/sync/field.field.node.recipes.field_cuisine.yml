@@ -1,11 +1,11 @@
-uuid: d91fe732-02e4-4e5a-88c5-422effd69f4e
+uuid: ecfa2c0c-d2cd-4c12-8e85-ec1550691c91
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_cuisine
     - node.type.recipes
-    - taxonomy.vocabulary.cuisine
+    - taxonomy.vocabulary.type_of_cuisine
 id: node.recipes.field_cuisine
 field_name: field_cuisine
 entity_type: node
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      cuisine: cuisine
+      type_of_cuisine: type_of_cuisine
     sort:
       field: name
       direction: asc

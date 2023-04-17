@@ -1,22 +1,22 @@
-uuid: b89e39a3-9630-41b9-a508-e1a6c97a35fd
+uuid: 1b27f6a1-8595-485f-b6aa-778d4282b932
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_cook_time
+    - field.storage.node.field_c
     - node.type.recipes
-id: node.recipes.field_cook_time
-field_name: field_cook_time
+id: node.recipes.field_c
+field_name: field_c
 entity_type: node
 bundle: recipes
 label: 'Cook time'
-description: 'Enter the time in minutes'
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  min: 1
+  min: 0
   max: null
   prefix: ''
   suffix: ' minutes'

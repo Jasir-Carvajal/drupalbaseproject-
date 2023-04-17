@@ -1,15 +1,16 @@
-uuid: c013d4da-b09d-42ec-874f-a27e8fd3ea9c
+uuid: 8fa4d703-e221-44f3-8175-832b7016b848
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.chef.body
     - field.field.node.chef.field_chef_image
-    - field.field.node.chef.field_cuisine
+    - field.field.node.chef.field_specialty
     - node.type.chef
   module:
     - media_library
     - path
+    - scheduler
     - text
 id: node.chef.default
 targetEntityType: node
@@ -34,20 +35,16 @@ content:
     third_party_settings: {  }
   field_chef_image:
     type: media_library_widget
-    weight: 122
+    weight: 123
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_cuisine:
-    type: entity_reference_autocomplete
-    weight: 123
+  field_specialty:
+    type: options_select
+    weight: 122
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -61,6 +58,12 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
@@ -93,5 +96,11 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

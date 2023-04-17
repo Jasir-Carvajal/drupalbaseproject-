@@ -1,4 +1,4 @@
-uuid: 304d478e-c2b8-4ccd-9644-b16fccc00b06
+uuid: 76772884-16df-4987-b0c6-e8aca7dfd177
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ id: node.chef.title
 field_name: title
 entity_type: node
 bundle: chef
-label: Name
+label: 'Chef name'
 description: ''
 required: true
 translatable: true

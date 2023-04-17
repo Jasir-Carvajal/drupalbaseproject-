@@ -1,11 +1,11 @@
-uuid: 23eb54e7-bc0c-4b6e-aa82-03d0f4ccd91f
+uuid: 972a00b8-ec8f-499c-a6ed-9ebbda5d4bcf
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.chef.body
     - field.field.node.chef.field_chef_image
-    - field.field.node.chef.field_cuisine
+    - field.field.node.chef.field_specialty
     - node.type.chef
   module:
     - text
@@ -29,15 +29,15 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 102
+    weight: 103
     region: content
-  field_cuisine:
+  field_specialty:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 102
     region: content
   links:
     settings: {  }

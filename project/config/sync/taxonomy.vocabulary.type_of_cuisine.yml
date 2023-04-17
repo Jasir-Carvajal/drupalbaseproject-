@@ -1,8 +1,8 @@
-uuid: 82d5bbd5-acb6-4622-b20f-0b83b6f2c551
+uuid: 05fbea61-66df-4e07-ad8c-513ada2e6043
 langcode: en
 status: true
 dependencies: {  }
-name: Cuisine
-vid: cuisine
+name: 'Type of Cuisine'
+vid: type_of_cuisine
 description: 'Examples: Italian, Japanese, Mexican, etc.'
 weight: 0

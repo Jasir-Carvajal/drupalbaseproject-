@@ -1,17 +1,17 @@
-uuid: 1ee1ff3f-1d29-429f-a41f-ba028b8646cc
+uuid: 23d673eb-a543-443b-84c2-b3e54b5db2ef
 langcode: en
 status: true
 dependencies:
   module:
-    - comment
     - node
-id: node.field_comments
-field_name: field_comments
+    - taxonomy
+id: node.field_specialty
+field_name: field_specialty
 entity_type: node
-type: comment
+type: entity_reference
 settings:
-  comment_type: comment
-module: comment
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -1,4 +1,4 @@
-uuid: 9ce0cdaa-8a0f-4e90-908d-6ce8edac2e09
+uuid: 46c6d1c2-3d44-4724-ad5c-6b17767fb46f
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.chef.body
     - field.field.node.chef.field_chef_image
-    - field.field.node.chef.field_cuisine
+    - field.field.node.chef.field_specialty
     - node.type.chef
   module:
     - text
@@ -31,4 +31,4 @@ content:
     region: content
 hidden:
   field_chef_image: true
-  field_cuisine: true
+  field_specialty: true

@@ -1,13 +1,10 @@
-uuid: fb8ab128-9b8b-411d-8685-c8a9c813189d
+uuid: a9b517b1-97fe-4ab8-b59b-1fc73fd27456
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
-    - field.field.node.recipes.body
+    - field.field.node.recipes.field_c
     - field.field.node.recipes.field_chef
-    - field.field.node.recipes.field_comments
-    - field.field.node.recipes.field_cook_time
     - field.field.node.recipes.field_cuisine
     - field.field.node.recipes.field_difficulty
     - field.field.node.recipes.field_format
@@ -16,21 +13,21 @@ dependencies:
     - field.field.node.recipes.field_media
     - node.type.recipes
   module:
-    - comment
     - options
-    - text
     - user
 id: node.recipes.default
 targetEntityType: node
 bundle: recipes
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
+  field_c:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    weight: 101
+    weight: 102
     region: content
   field_chef:
     type: entity_reference_label
@@ -38,25 +35,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 110
-    region: content
-  field_comments:
-    type: comment_default
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    weight: 108
-    region: content
-  field_cook_time:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 103
+    weight: 107
     region: content
   field_cuisine:
     type: entity_reference_label
@@ -71,7 +50,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 104
     region: content
   field_format:
     type: entity_reference_label
@@ -79,7 +58,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 109
+    weight: 106
     region: content
   field_ingridients:
     type: string
@@ -87,14 +66,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 102
+    weight: 103
     region: content
   field_instructions:
-    type: text_default
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 107
+    weight: 101
     region: content
   field_media:
     type: entity_reference_entity_view
@@ -103,7 +82,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 104
+    weight: 108
     region: content
   links:
     settings: {  }

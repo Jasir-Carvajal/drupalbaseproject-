@@ -1,4 +1,4 @@
-uuid: 424ed724-8330-4678-9028-7785fde7105a
+uuid: 89f58b3f-0a4b-489c-9241-6c8d4affe082
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ field_name: field_ingridients
 entity_type: node
 bundle: recipes
 label: Ingridients
-description: 'Add one ingredient per line'
-required: true
+description: ''
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

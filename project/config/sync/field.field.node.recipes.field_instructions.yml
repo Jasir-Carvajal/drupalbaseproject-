@@ -1,12 +1,10 @@
-uuid: 91f0ff06-e3f9-418a-ac53-d0f1d73a8da3
+uuid: 4565d5ab-b520-4d6d-8252-351b37bc9023
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_instructions
     - node.type.recipes
-  module:
-    - text
 id: node.recipes.field_instructions
 field_name: field_instructions
 entity_type: node
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: string_long

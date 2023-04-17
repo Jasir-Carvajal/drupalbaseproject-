@@ -1,4 +1,4 @@
-uuid: 7e878217-d4fc-45be-9155-faa27c823015
+uuid: 74bc7dd5-b62a-4116-9ab5-9fb9133f342c
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ id: node.chef.field_chef_image
 field_name: field_chef_image
 entity_type: node
 bundle: chef
-label: 'Chef image'
+label: chef_image
 description: ''
 required: false
 translatable: false

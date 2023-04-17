@@ -1,13 +1,27 @@
-uuid: 9f561336-e31b-49db-b0b5-50f859d9b944
+uuid: 4efdcd41-db37-42bb-a5f4-40be778c956d
 langcode: en
 status: true
 dependencies:
   module:
     - menu_ui
+    - scheduler
 third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: true
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: true
+    publish_touch: true
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
 name: Recipes
 type: recipes
 description: ''

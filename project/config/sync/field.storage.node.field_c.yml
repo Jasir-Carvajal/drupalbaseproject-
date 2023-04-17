@@ -1,11 +1,11 @@
-uuid: 227ddf9b-91bb-43fc-9c86-db6fd62cbb2a
+uuid: d2bf3417-5e6b-40d3-b9eb-46e8ac090d62
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_cook_time
-field_name: field_cook_time
+id: node.field_c
+field_name: field_c
 entity_type: node
 type: integer
 settings:

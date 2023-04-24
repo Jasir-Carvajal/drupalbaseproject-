@@ -1,0 +1,14 @@
+uuid: 4385da92-fae3-46a7-ac9f-eaf3e26cdcc5
+langcode: en
+status: true
+dependencies: {  }
+name: nueva_image
+label: 'nueva image'
+effects:
+  778e2e30-b13b-4e02-9193-961dcf3a47fd:
+    uuid: 778e2e30-b13b-4e02-9193-961dcf3a47fd
+    id: image_resize
+    weight: 1
+    data:
+      width: 1200
+      height: 800

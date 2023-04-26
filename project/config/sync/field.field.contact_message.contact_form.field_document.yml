@@ -1,0 +1,27 @@
+uuid: cf72531c-ff5b-45bb-ab3b-af19111a6eb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_form
+    - field.storage.contact_message.field_document
+  module:
+    - file
+id: contact_message.contact_form.field_document
+field_name: field_document
+entity_type: contact_message
+bundle: contact_form
+label: Document
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

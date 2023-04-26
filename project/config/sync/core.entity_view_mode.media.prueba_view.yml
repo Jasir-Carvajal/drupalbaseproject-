@@ -1,0 +1,10 @@
+uuid: 38ce1d7b-3777-4396-947c-a4f5a6c5f1d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.prueba_view
+label: prueba-view
+targetEntityType: media
+cache: true

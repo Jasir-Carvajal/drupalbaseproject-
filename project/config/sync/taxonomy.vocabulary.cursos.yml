@@ -1,0 +1,8 @@
+uuid: acc7a9ac-e0b4-42e0-96ea-72c56f497e5c
+langcode: en
+status: true
+dependencies: {  }
+name: Cursos_Categoria
+vid: cursos
+description: ''
+weight: 0

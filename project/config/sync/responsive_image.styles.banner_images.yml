@@ -1,0 +1,30 @@
+uuid: 99ed989c-7bb1-4b15-8963-3368647a9274
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+    - image.style.nueva_image
+  theme:
+    - olivero
+id: banner_images
+label: 'Banner images'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: nueva_image
+    breakpoint_id: olivero.grid-max
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: large
+    breakpoint_id: olivero.nav
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: olivero.sm
+    multiplier: 1x
+breakpoint_group: olivero
+fallback_image_style: large

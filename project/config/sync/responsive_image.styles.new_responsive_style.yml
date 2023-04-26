@@ -1,0 +1,30 @@
+uuid: d2f418e0-f256-4028-8559-dede84d0d16f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+    - image.style.nueva_image
+  theme:
+    - olivero
+id: new_responsive_style
+label: new_responsive_style
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: nueva_image
+    breakpoint_id: olivero.grid-max
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: large
+    breakpoint_id: olivero.nav
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: olivero.sm
+    multiplier: 1x
+breakpoint_group: olivero
+fallback_image_style: large

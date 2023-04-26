@@ -1,28 +1,27 @@
-uuid: b697e297-cd35-4f02-9c70-3d863b7e53b4
+uuid: 6a5acaf8-6b31-4e0c-91b8-3fa7b1ec6c95
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.prueba_view
     - field.field.media.image.field_media_image
-    - image.style.large
     - media.type.image
+    - responsive_image.styles.new_responsive_style
   module:
-    - image
+    - responsive_image
 _core:
   default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
-id: media.image.default
+id: media.image.prueba_view
 targetEntityType: media
 bundle: image
-mode: default
+mode: prueba_view
 content:
   field_media_image:
-    type: image
+    type: responsive_image
     label: visually_hidden
     settings:
+      responsive_image_style: new_responsive_style
       image_link: ''
-      image_style: large
-      image_loading:
-        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content

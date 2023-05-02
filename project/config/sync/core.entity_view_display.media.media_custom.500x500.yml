@@ -1,0 +1,32 @@
+uuid: 05872fdf-79a9-4294-97d4-d9b8d9d2856d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.500x500
+    - field.field.media.media_custom.field_media_image
+    - image.style.500x500
+    - media.type.media_custom
+  module:
+    - image
+id: media.media_custom.500x500
+targetEntityType: media
+bundle: media_custom
+mode: 500x500
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: 500x500
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

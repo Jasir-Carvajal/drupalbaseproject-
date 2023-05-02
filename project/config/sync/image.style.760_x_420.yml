@@ -1,0 +1,14 @@
+uuid: 34b5468e-201c-41cf-bbbb-159cecc81839
+langcode: en
+status: true
+dependencies: {  }
+name: 760_x_420
+label: '760 x 420'
+effects:
+  887a0d22-fa05-4af2-8c2a-5ca38c0cae8c:
+    uuid: 887a0d22-fa05-4af2-8c2a-5ca38c0cae8c
+    id: image_resize
+    weight: 2
+    data:
+      width: 760
+      height: 420

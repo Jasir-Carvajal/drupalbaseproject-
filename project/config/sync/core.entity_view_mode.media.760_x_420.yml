@@ -1,0 +1,10 @@
+uuid: e9b11b9f-7d3d-416d-b777-bd8e351abc99
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.760_x_420
+label: '760 x 420'
+targetEntityType: media
+cache: true

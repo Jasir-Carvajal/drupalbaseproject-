@@ -1,0 +1,32 @@
+uuid: eec22dce-4989-4f7a-b6f6-3e2f415e715a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.760_x_420
+    - field.field.media.media_custom.field_media_image
+    - image.style.760_x_420
+    - media.type.media_custom
+  module:
+    - image
+id: media.media_custom.760_x_420
+targetEntityType: media
+bundle: media_custom
+mode: 760_x_420
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: 760_x_420
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

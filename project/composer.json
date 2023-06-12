@@ -29,6 +29,7 @@
         "drupal/devel": "^5.1",
         "drupal/entity_browser": "^2.9",
         "drupal/entity_browser_entity_form": "^2.9",
+        "drupal/gin": "^3.0@RC",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/media_entity_browser": "^2.0@alpha",
         "drupal/paragraphs": "^1.15",
@@ -41,7 +42,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
